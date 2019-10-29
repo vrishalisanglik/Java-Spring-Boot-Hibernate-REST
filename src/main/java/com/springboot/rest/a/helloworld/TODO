@@ -1,0 +1,8 @@
+Run SpringBoot app
+--	https://spring.io/guides/gs/spring-boot/ talks about @SpringBootApplication
+Run SpringBoot app from another package
+
+Springboot REST PrintMessage with GET mapping and no param
+Springboot REST PrintMessage with GET mapping and one param
+Springboot REST PrintMessage with GET mapping and no param returning bean
+Springboot REST PrintMessage with GET mapping and one param returning bean
