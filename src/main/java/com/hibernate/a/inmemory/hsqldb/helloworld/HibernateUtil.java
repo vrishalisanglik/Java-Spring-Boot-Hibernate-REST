@@ -10,7 +10,7 @@ public class HibernateUtil {
 
 	private static SessionFactory buildSessionFactory() {
 		if (sessionFactory == null) {
-			Configuration configuration = (new Configuration()).configure("/hibernate.inmemory.cfg.xml");
+			Configuration configuration = (new Configuration()).configure("/hibernate.inmemory.hsqldb.cfg.xml");
 			StandardServiceRegistryBuilder serviceRegistryBuilder = new StandardServiceRegistryBuilder();
 			serviceRegistryBuilder.applySettings(configuration.getProperties());
 			org.hibernate.service.ServiceRegistry serviceRegistry = serviceRegistryBuilder.build();
