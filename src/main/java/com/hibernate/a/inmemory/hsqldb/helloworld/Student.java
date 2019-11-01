@@ -1,4 +1,4 @@
-package com.hibernate.a.inmemory.helloworld;
+package com.hibernate.a.inmemory.hsqldb.helloworld;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -10,6 +10,11 @@ public class Student {
 	private String name;
 
 	public Student() {
+	}
+
+	public Student(int id, String name) {
+		this.id = id;
+		this.name = name;
 	}
 
 	public int getId() {

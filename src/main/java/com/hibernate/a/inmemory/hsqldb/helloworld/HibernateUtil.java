@@ -1,4 +1,4 @@
-package com.hibernate.a.inmemory.helloworld;
+package com.hibernate.a.inmemory.hsqldb.helloworld;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;

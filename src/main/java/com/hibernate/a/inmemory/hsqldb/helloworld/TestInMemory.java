@@ -1,11 +1,12 @@
-package com.hibernate.a.inmemory.helloworld;
+package com.hibernate.a.inmemory.hsqldb.helloworld;
 
 import org.hibernate.Session;
 
 public class TestInMemory {
 
 	public static void main(String args[]) {
-		try (Session session = HibernateUtil.getSessionFactory().openSession();) {
+		try {
+			Session session = HibernateUtil.getSessionFactory().openSession();
 			createStudent(session);
 		} catch (Exception exception) {
 			exception.printStackTrace();
