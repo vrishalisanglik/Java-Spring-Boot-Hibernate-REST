@@ -1,0 +1,7 @@
+/*C3*/SET SCHEMA PUBLIC
+create table Student (id integer not null, name varchar(255), primary key (id))
+create sequence SEQ_STUDENT_ID start with 1
+INSERT INTO STUDENT VALUES(1,'Some name')
+ALTER SEQUENCE PUBLIC.SEQ_STUDENT_ID RESTART WITH 2
+COMMIT
+DISCONNECT
