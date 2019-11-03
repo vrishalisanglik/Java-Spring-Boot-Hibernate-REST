@@ -1,15 +1,16 @@
 package com.hibernate.a.in_memory_databases.helloworld;
 
-import java.util.Collection;
 import java.util.List;
 
 import org.hibernate.Session;
 
+import com.hibernate.a.in_memory_databases.helloworld.DbUtil;
+
 public class TestDb {
 
 	public static void main(String args[]) {
-		try {
-			Session session = DbUtil.getSessionFactory().openSession();
+		
+		try(Session session = DbUtil.getSessionFactory().openSession();) {
 			createStudent(session);
 			System.out.println(getAllStudent(session));
 //			deleteAllStudents(session);
@@ -38,7 +39,7 @@ public class TestDb {
 		session.getTransaction().commit();
 	}
 	
-	private static Collection<?> getAllStudent(Session session) {
-		return session.createCriteria(Student.class).list();
+	private static List<Student> getAllStudent(Session session) {
+		return session.createQuery("select s from Student s").getResultList();
 	}
 }

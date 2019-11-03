@@ -15,6 +15,7 @@ public class DbUtil {
 		if (sessionFactory == null) {
 			Configuration configuration = (new Configuration()).configure(HSQL_EXTERNAL_CONFIG);
 			StandardServiceRegistryBuilder serviceRegistryBuilder = new StandardServiceRegistryBuilder();
+			configuration.addAnnotatedClass(Student.class);
 			serviceRegistryBuilder.applySettings(configuration.getProperties());
 			org.hibernate.service.ServiceRegistry serviceRegistry = serviceRegistryBuilder.build();
 			sessionFactory = configuration.buildSessionFactory(serviceRegistry);
