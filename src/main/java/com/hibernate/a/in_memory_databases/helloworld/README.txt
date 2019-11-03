@@ -1,5 +1,9 @@
 In this package I am testing the HSQL DB , using it as an in-memory DB as well as testing it as an externally launched DB
 
+#Use of in-memory databases:
+1. Used when you do not have access to localdatabases
+2. hsql db is very light weight. An hsql jar is aruond 1.5MB, while an unzipped jar is about 3.5MB. A typical SQL Server installation can go upto 1.5 GB.
+
 # To launch the HSQLDB engine below is the command (for version 1.8.0.10 and 2.5.0 resp.)
 C:\Vrishali\eclipse-interview\Java-Spring-Boot-Hibernate-REST\external.db.server\hsqldb-1.8.0.10>"C:\Program Files\Java\jdk1.8.0_171\bin\java.exe" org.hsqldb.Server
 C:\Vrishali\eclipse-interview\Java-Spring-Boot-Hibernate-REST\external.db.server\hsqldb-2.5.0>"c:\Program Files\Java\jdk1.8.0_171\bin\java.exe" org.hsqldb.server.Server
