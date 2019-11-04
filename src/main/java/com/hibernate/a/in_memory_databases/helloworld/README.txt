@@ -18,7 +18,15 @@ C:\Vrishali\eclipse-interview\Java-Spring-Boot-Hibernate-REST\external.db.server
 
 # ================ H2DB =============== #
 
-# To launch the H2DB engine below is the command (for version 1.8.0.10 and 2.5.0 resp.)
+# To launch the H2DB engine below is the command
 C:\Vrishali\eclipse-interview\Java-Spring-Boot-Hibernate-REST\external.db.server\h2-1.4.200>"c:\Program Files\Java\jdk1.8.0_171\bin\java.exe" org.h2.tools.Server -tcp -ifNotExists
 
 # H2 User Guide = http://www.h2database.com/html/main.html
+
+# =============== DERBYDB ============== #
+
+# DERBY User Guide = https://db.apache.org/derby/
+# Download server from - http://mirrors.estointernet.in/apache//db/derby/db-derby-10.14.2.0/db-derby-10.14.2.0-bin.zip
+and run:
+C:\Vrishali\eclipse-interview\Java-Spring-Boot-Hibernate-REST\external.db.server\derby-10.14.2.0\db-derby-10.14.2.0-bin\bin>startNetworkServer.bat
+# Derby client server mode is supported by Derby Network Server - http://db.apache.org/derby/papers/DerbyTut/ns_intro.html
