@@ -17,10 +17,15 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>6.0.0.Alpha2</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
 			<version>2.5.0</version>
+		</dependency> -->
+		<dependency>
+		    <groupId>com.h2database</groupId>
+		    <artifactId>h2</artifactId>
+		    <version>1.4.200</version>
 		</dependency>
 	</dependencies>
 

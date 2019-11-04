@@ -15,3 +15,10 @@ C:\Vrishali\eclipse-interview\Java-Spring-Boot-Hibernate-REST\external.db.server
 
 # HSQL User Guide = http://hsqldb.org/doc/guide/guide.html
 # https://www.baeldung.com/java-in-memory-databases
+
+# ================ H2DB =============== #
+
+# To launch the H2DB engine below is the command (for version 1.8.0.10 and 2.5.0 resp.)
+C:\Vrishali\eclipse-interview\Java-Spring-Boot-Hibernate-REST\external.db.server\h2-1.4.200>"c:\Program Files\Java\jdk1.8.0_171\bin\java.exe" org.h2.tools.Server -tcp -ifNotExists
+
+# H2 User Guide = http://www.h2database.com/html/main.html

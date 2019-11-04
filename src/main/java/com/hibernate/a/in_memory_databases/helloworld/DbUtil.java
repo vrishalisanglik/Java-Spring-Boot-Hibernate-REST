@@ -8,12 +8,14 @@ public class DbUtil {
 
 	private static final String HSQL_EMBEDDED_CONFIG = "/hibernate.hsqldb.mode.embedded.cfg.xml";
 	private static final String HSQL_SERVER_CONFIG = "/hibernate.hsqldb.mode.server.cfg.xml";
+	private static final String H2_EMBEDDED_CONFIG = "/hibernate.h2.mode.embedded.cfg.xml";
+	private static final String H2_SERVER_CONFIG = "/hibernate.h2.mode.server.cfg.xml";
 
 	private static SessionFactory sessionFactory = buildSessionFactory();
 
 	private static SessionFactory buildSessionFactory() {
 		if (sessionFactory == null) {
-			Configuration configuration = (new Configuration()).configure(HSQL_SERVER_CONFIG);
+			Configuration configuration = (new Configuration()).configure(H2_SERVER_CONFIG);
 			StandardServiceRegistryBuilder serviceRegistryBuilder = new StandardServiceRegistryBuilder();
 			configuration.addAnnotatedClass(Student.class);
 			serviceRegistryBuilder.applySettings(configuration.getProperties());
